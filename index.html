@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Билгүүн ❤️ Зүнпүрэлма</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  font-family:Georgia, serif;
+  background:linear-gradient(135deg,#160713,#43102f,#7b204b);
+  color:white;
+  overflow:hidden;
+}
+
+.page{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+}
+
+.card{
+  width:100%;
+  max-width:650px;
+  max-height:92vh;
+  overflow:auto;
+  text-align:center;
+  padding:42px 24px;
+  border-radius:28px;
+  background:rgba(255,255,255,0.11);
+  border:1px solid rgba(255,220,160,0.6);
+  box-shadow:0 25px 80px rgba(0,0,0,0.45);
+  backdrop-filter:blur(15px);
+}
+
+.small{
+  color:#ffd98d;
+  letter-spacing:4px;
+  font-size:12px;
+  margin-bottom:20px;
+}
+
+.names{
+  font-size:30px;
+  font-weight:bold;
+}
+
+.names span{
+  color:#ff709a;
+}
+
+.line{
+  color:#ffd36b;
+  margin:20px 0;
+  font-size:22px;
+}
+
+h1{
+  font-size:42px;
+  line-height:1.15;
+  color:#fff6df;
+  margin-bottom:20px;
+}
+
+.subtitle{
+  line-height:1.7;
+  font-size:17px;
+  margin-bottom:24px;
+  color:#f7eaf0;
+}
+
+.date{
+  padding:17px;
+  margin:0 auto 24px;
+  max-width:440px;
+  border-radius:18px;
+  background:rgba(255,255,255,0.09);
+  border:1px solid rgba(255,255,255,0.12);
+  line-height:1.7;
+}
+
+.date small{
+  color:#ffd98d;
+}
+
+.message{
+  line-height:1.8;
+  font-size:17px;
+  margin-bottom:28px;
+}
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+  min-height:65px;
+}
+
+button{
+  border:0;
+  border-radius:50px;
+  padding:16px 24px;
+  font-size:17px;
+  font-weight:bold;
+}
+
+#yes{
+  color:white;
+  background:linear-gradient(135deg,#ff4f83,#ff83aa);
+  box-shadow:0 10px 30px rgba(255,80,130,0.4);
+}
+
+#no{
+  color:#45142d;
+  background:white;
+}
+
+.note{
+  margin-top:18px;
+  color:#ffd98d;
+  font-size:14px;
+}
+
+#success{
+  position:fixed;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  text-align:center;
+  background:linear-gradient(135deg,#430b30,#ad245e);
+  z-index:50;
+}
+
+.success-box{
+  max-width:600px;
+  padding:40px 25px;
+  border-radius:28px;
+  background:rgba(255,255,255,0.12);
+  border:1px solid rgba(255,230,190,0.6);
+}
+
+.big-heart{
+  font-size:85px;
+  animation:pulse 1.2s infinite;
+}
+
+#success h2{
+  font-size:40px;
+  margin:15px 0;
+}
+
+#success p{
+  font-size:18px;
+  line-height:1.7;
+}
+
+.couple{
+  margin:22px 0;
+  font-size:27px;
+  font-weight:bold;
+  color:#ffe39d;
+}
+
+.floating{
+  position:fixed;
+  bottom:-60px;
+  pointer-events:none;
+  animation:fly linear forwards;
+  z-index:80;
+}
+
+.star{
+  position:fixed;
+  pointer-events:none;
+  color:#ffd760;
+  animation:shine 1.5s forwards;
+}
+
+@keyframes pulse{
+  50%{transform:scale(1.18);}
+}
+
+@keyframes fly{
+  to{
+    transform:translateY(-120vh) rotate(540deg);
+    opacity:0;
+  }
+}
+
+@keyframes shine{
+  0%{opacity:0;transform:scale(0.3);}
+  50%{opacity:1;}
+  100%{opacity:0;transform:scale(1.8);}
+}
+
+@media(max-width:500px){
+  h1{font-size:36px;}
+  .names{font-size:25px;}
+  .card{padding:35px 18px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <div class="card">
+
+    <div class="small">
+      A SPECIAL INVITATION
+    </div>
+
+    <div class="names">
+      Билгүүн <span>♥</span> Зүнпүрэлма
+    </div>
+
+    <div class="line">
+      ─── ◆ ───
+    </div>
+
+    <h1>
+      Надтай болзоонд гарах уу?
+    </h1>
+
+    <p class="subtitle">
+      Италийн романтик үдэш, үзэсгэлэнт гудамж,
+      дулаахан инээмсэглэл, мартагдашгүй дурсамж…
+    </p>
+
+    <div class="date">
+      🌹<br>
+      <small>Бидний онцгой өдөр</small><br>
+      <strong>2026 оны 7-р сарын 25</strong><br>
+      🇮🇹 Итали улс
+    </div>
+
+    <p class="message">
+      Чамтай хамт өнгөрүүлэх мөч бүр миний хувьд
+      хамгийн сайхан дурсамж байдаг.<br><br>
+
+      Тиймээс энэ гайхалтай өдөр надтай хамт
+      болзоонд гарахыг зөвшөөрөх үү?
+    </p>
+
+    <div class="buttons">
+      <button id="yes">
+        ♥ Тийм, зөвшөөрч байна
+      </button>
+
+      <button id="no">
+        Үгүй
+      </button>
+    </div>
+
+    <div class="note">
+      “Үгүй” товчийг дарах амаргүй шүү… 🤭
+    </div>
+
+  </div>
+
+</div>
+
+<div id="success">
+
+  <div class="success-box">
+
+    <div class="big-heart">♥</div>
+
+    <div class="small">
+      SHE SAID YES!
+    </div>
+
+    <h2>
+      Баярлалаа, хайрт минь!
+    </h2>
+
+    <p>
+      2026 оны 7-р сарын 25-нд Италид
+      бидний гайхалтай болзоо эхэлнэ.
+    </p>
+
+    <div class="couple">
+      Билгүүн ♥ Зүнпүрэлма
+    </div>
+
+    <p>
+      Чамтай хамт байх мөчийг тэсэн ядан хүлээж байна.
+      🌹 🇮🇹 ✨ 🥂
+    </p>
+
+  </div>
+
+</div>
+
+<script>
+const yesButton = document.getElementById("yes");
+const noButton = document.getElementById("no");
+const success = document.getElementById("success");
+
+function moveNoButton(event){
+  event.preventDefault();
+
+  const x =
+    Math.random() *
+    (window.innerWidth - noButton.offsetWidth - 20);
+
+  const y =
+    Math.random() *
+    (window.innerHeight - noButton.offsetHeight - 20);
+
+  noButton.style.position = "fixed";
+  noButton.style.left = Math.max(10,x) + "px";
+  noButton.style.top = Math.max(10,y) + "px";
+  noButton.style.zIndex = "40";
+}
+
+noButton.addEventListener("mouseenter",moveNoButton);
+
+noButton.addEventListener(
+  "touchstart",
+  moveNoButton,
+  {passive:false}
+);
+
+noButton.addEventListener("click",moveNoButton);
+
+function createHearts(total){
+
+  for(let i=0;i<total;i++){
+
+    const heart = document.createElement("div");
+
+    heart.className = "floating";
+
+    heart.innerHTML =
+      Math.random() > 0.25 ? "♥" : "🌹";
+
+    heart.style.left =
+      Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+      18 + Math.random() * 35 + "px";
+
+    heart.style.color =
+      ["#ff6f9c","#ffd36b","#ffffff"]
+      [Math.floor(Math.random()*3)];
+
+    heart.style.animationDuration =
+      3 + Math.random() * 4 + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+      heart.remove();
+    },7500);
+  }
+}
+
+yesButton.addEventListener("click",()=>{
+
+  success.style.display = "flex";
+
+  createHearts(100);
+});
+
+setInterval(()=>{
+
+  const star = document.createElement("div");
+
+  star.className = "star";
+  star.innerHTML =
+    Math.random() > 0.5 ? "✦" : "✧";
+
+  star.style.left =
+    Math.random() * 100 + "vw";
+
+  star.style.top =
+    Math.random() * 100 + "vh";
+
+  star.style.fontSize =
+    10 + Math.random() * 20 + "px";
+
+  document.body.appendChild(star);
+
+  setTimeout(()=>{
+    star.remove();
+  },1500);
+
+},350);
+
+window.onload = ()=>{
+  createHearts(15);
+};
+</script>
+
+</body>
+</html>
